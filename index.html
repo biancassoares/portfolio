@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bianca Soares | Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <nav>
+
+        <!-- Logo / Voltar ao início -->
+        <a href="#inicio"
+           class="logo"
+           aria-label="Voltar ao início">
+            &lt;/&gt;
+        </a>
+
+
+        <!-- Menu mobile -->
+        <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+
+        <div class="nav-menu" id="nav-menu">
+
+            <!-- Navegação -->
+            <div class="nav-links">
+
+                <a href="#inicio"
+                   data-i18n="navHome">
+                    Início
+                </a>
+
+                <a href="#sobre"
+                   data-i18n="navAbout">
+                    Sobre mim
+                </a>
+
+                <a href="#tech"
+                   data-i18n="navStack">
+                    Tech Stack
+                </a>
+
+                <a href="#projetos"
+                   data-i18n="navProjects">
+                    Projetos
+                </a>
+
+                <a href="#contato"
+                   data-i18n="navContact">
+                    Contato
+                </a>
+
+            </div>
+
+
+            <!-- Links externos + idioma -->
+            <div class="nav-actions">
+
+                <a href="https://github.com/biancassoares"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="#"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+
+                <div class="language-switch">
+
+                    <button
+                            class="language-option active"
+                            data-lang="pt">
+                        PT
+                    </button>
+
+                    <button
+                            class="language-option"
+                            data-lang="en">
+                        EN
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- CONTEÚDO PRINCIPAL -->
+<main>
+
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <p class="hero-label"
+               data-i18n="heroLabel">
+                JAVA BACKEND DEVELOPER ✨
+            </p>
+
+            <h1>Bianca Soares</h1>
+
+            <h2>
+                Java Backend Developer 💻
+            </h2>
+
+            <p class="hero-description"
+               data-i18n="heroDescription">
+
+                Desenvolvo projetos backend com Java e Spring Boot,
+                explorando APIs REST, bancos de dados, testes e boas práticas.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#projetos"
+                   class="btn-primary"
+                   data-i18n="viewProjects">
+
+                    Ver projetos →
+
+                </a>
+
+                <a href="#contato"
+                   class="btn-secondary"
+                   data-i18n="contact">
+
+                    Entrar em contato 💗
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT.ME CODE CARD -->
+        <div class="code-card">
+
+            <div class="code-header">
+
+                <div class="code-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span class="code-title">
+                    about.me ✨
+                </span>
+
+            </div>
+
+
+            <pre class="code-content"><code><span>01</span> public class Bianca {
+<span>02</span>     String role = "Java Backend Developer";
+<span>03</span>     String focus = "APIs & Clean Code";
+<span>04</span>     String learning = "Always";
+<span>05</span> }</code></pre>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SOBRE MIM + TECH STACK -->
+    <section class="about-tech">
+
+        <!-- SOBRE MIM -->
+        <div class="info-card" id="sobre">
+
+            <div class="card-title">
+
+                <span>👩🏻‍💻</span>
+
+                <h3 data-i18n="aboutTitle">
+                    Sobre mim
+                </h3>
+
+                <span>☕️</span>
+
+            </div>
+
+
+            <p data-i18n="aboutDescription">
+
+                Sou desenvolvedora em formação com foco em backend,
+                construindo projetos com Java e Spring Boot para praticar
+                APIs REST, bancos de dados, testes e boas práticas de desenvolvimento.
+
+            </p>
+
+        </div>
+
+
+        <!-- TECH STACK -->
+        <div class="info-card" id="tech">
+
+            <div class="card-title">
+
+                <span>✨</span>
+
+                <h3>
+                    Tech Stack
+                </h3>
+
+            </div>
+
+
+            <div class="tech-list">
+
+                <span class="tech-item">
+                    ☕ Java
+                </span>
+
+                <span class="tech-item">
+                    🌱 Spring Boot
+                </span>
+
+                <span class="tech-item">
+                    🐘 PostgreSQL
+                </span>
+
+                <span class="tech-item">
+                    🗃️ JPA / Hibernate
+                </span>
+
+                <span class="tech-item">
+                    🧪 JUnit
+                </span>
+
+                <span class="tech-item">
+                    📖 Swagger
+                </span>
+
+                <span class="tech-item">
+                    🌿 Git
+                </span>
+
+                <span class="tech-item">
+                    🐳 Docker
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROJETOS -->
+    <section class="projects-section" id="projetos">
+
+        <div class="section-heading">
+
+            <p class="section-kicker"
+               data-i18n="projectsKicker">
+
+                MEUS PROJETOS ✨
+
+            </p>
+
+            <h2 data-i18n="projectsTitle">
+                Projetos
+            </h2>
+
+            <p data-i18n="projectsDescription">
+
+                Projetos que desenvolvi para colocar meus estudos em prática
+                e evoluir minhas habilidades em desenvolvimento backend.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- TRANSACTION API -->
+        <article class="project-featured">
+
+            <div class="project-status">
+
+                ⭐
+
+                <span data-i18n="featuredProject">
+                    Projeto em destaque
+                </span>
+
+            </div>
+
+
+            <h3>
+                Transaction API
+            </h3>
+
+
+            <p class="project-description"
+               data-i18n="transactionDescription">
+
+                API REST desenvolvida para gerenciamento de transações,
+                aplicando conceitos de arquitetura em camadas, validação,
+                tratamento de exceções, testes e documentação.
+
+            </p>
+
+
+
+            <div class="project-highlights">
+
+                <div>
+                    ✅
+                    <span data-i18n="projectFeatureCrud">
+                        CRUD completo
+                    </span>
+                </div>
+
+
+                <div>
+                    ✅
+                    <span data-i18n="projectFeatureDto">
+                        DTOs e validação
+                    </span>
+                </div>
+
+
+                <div>
+                    ✅
+                    <span data-i18n="projectFeatureExceptions">
+                        Tratamento de exceções
+                    </span>
+                </div>
+
+
+                <div>
+                    ✅
+                    <span data-i18n="projectFeatureTests">
+                        Testes unitários
+                    </span>
+                </div>
+
+
+                <div>
+                    ✅
+                    <span data-i18n="projectFeatureDocs">
+                        Documentação com Swagger
+                    </span>
+                </div>
+
+            </div>
+
+
+
+            <div class="project-tags">
+
+                <span>☕ Java</span>
+                <span>🌱 Spring Boot</span>
+                <span>🐘 PostgreSQL</span>
+                <span>🧪 JUnit</span>
+                <span>📖 Swagger</span>
+
+            </div>
+
+
+
+            <div class="project-actions">
+
+                <a href="https://github.com/biancassoares/transaction-api"
+                   class="btn-primary"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-i18n="viewGithub">
+
+                    Ver no GitHub ↗
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- CONTATO -->
+    <section class="contact-section" id="contato">
+
+        <div class="contact-card">
+
+            <div class="contact-content">
+
+                <p class="section-kicker"
+                   data-i18n="contactKicker">
+
+                    CONTATO 💗
+
+                </p>
+
+
+                <h2 data-i18n="contactTitle">
+                    Vamos conversar?
+                </h2>
+
+
+                <p class="contact-description"
+                   data-i18n="contactDescription">
+
+                    Estou aberta a oportunidades, conexões e novos desafios
+                    na área de desenvolvimento de software.
+
+                </p>
+
+
+                <div class="contact-links">
+
+                    <a href="mailto:SEU_EMAIL">
+
+                        ✉️
+
+                        <span data-i18n="sendEmail">
+                            Enviar e-mail
+                        </span>
+
+                    </a>
+
+
+                    <a href="#"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        💼 LinkedIn
+
+                    </a>
+
+
+                    <a href="https://github.com/biancassoares"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        💻 GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!--  gatinho programador -->
+            <div class="contact-decoration">
+
+                <img
+                        src="assets/images/cat-programmer.png"
+                        alt="Gatinho programando em um notebook"
+                        class="cat-programmer"
+                >
+
+                <p data-i18n="catMessage">
+                    coding & coffee ☕️✨
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-code">
+            &gt; hello world ✨
+        </div>
+
+
+        <p>
+
+            © <span id="current-year"></span>
+            Bianca Soares •
+
+            <span data-i18n="footerText">
+                Feito com 💗 e código ☕️
+            </span>
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
