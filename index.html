@@ -130,7 +130,7 @@
 
             <p class="hero-label"
                data-i18n="heroLabel">
-                JAVA BACKEND DEVELOPER ✨
+                BACKEND DEVELOPER ✨
             </p>
 
             <h1>Bianca Soares</h1>
@@ -142,8 +142,7 @@
             <p class="hero-description"
                data-i18n="heroDescription">
 
-                Desenvolvo projetos backend com Java e Spring Boot,
-                explorando APIs REST, bancos de dados, testes e boas práticas.
+                Transformo lógica e regras de negócio em APIs backend bem estruturadas com Java e Spring Boot.
 
             </p>
 
@@ -222,9 +221,7 @@
 
             <p data-i18n="aboutDescription">
 
-                Sou desenvolvedora em formação com foco em backend,
-                construindo projetos com Java e Spring Boot para praticar
-                APIs REST, bancos de dados, testes e boas práticas de desenvolvimento.
+                Minha jornada em desenvolvimento de software começou em 2023. Desde então, venho aprofundando meus conhecimentos em backend, construindo aplicações com Java e Spring Boot e explorando APIs REST, bancos de dados, testes e boas práticas de desenvolvimento.
 
             </p>
 
@@ -294,9 +291,7 @@
 
             <p class="section-kicker"
                data-i18n="projectsKicker">
-
                 MEUS PROJETOS ✨
-
             </p>
 
             <h2 data-i18n="projectsTitle">
@@ -304,122 +299,163 @@
             </h2>
 
             <p data-i18n="projectsDescription">
-
                 Projetos que desenvolvi para colocar meus estudos em prática
                 e evoluir minhas habilidades em desenvolvimento backend.
-
             </p>
 
         </div>
 
 
+        <!-- GRID COMEÇA AQUI -->
+        <div class="projects-grid">
 
-        <!-- TRANSACTION API -->
-        <article class="project-featured">
 
-            <div class="project-status">
+            <!-- PAYMENT API -->
+            <article class="project-featured">
 
-                ⭐
-
-                <span data-i18n="featuredProject">
+                <div class="project-status">
+                    ⭐
+                    <span data-i18n="featuredProject">
                     Projeto em destaque
                 </span>
+                </div>
 
-            </div>
+                <h3>Payment API</h3>
+
+                <p class="project-description"
+                   data-i18n="paymentDescription">
+                    API REST desenvolvida com Java e Spring Boot para simular
+                    o fluxo de pagamentos de uma aplicação real, incluindo
+                    geração de QR Codes e controle dos diferentes estados
+                    de pagamento.
+                </p>
+
+                <div class="project-highlights">
+
+                    <div>
+                        ✅
+                        <span data-i18n="paymentFeatureLifecycle">
+                        Ciclo de pagamento
+                    </span>
+                    </div>
+
+                    <div>
+                        ✅
+                        <span data-i18n="paymentFeatureRules">
+                        Regras de negócio
+                    </span>
+                    </div>
+
+                    <div>
+                        ✅
+                        <span data-i18n="paymentFeatureQrCode">
+                        Geração de QR Code
+                    </span>
+                    </div>
+
+                    <div>
+                        ✅
+                        <span data-i18n="paymentFeatureRest">
+                        API REST
+                    </span>
+                    </div>
+
+                </div>
+
+                <div class="project-tags">
+                    <span>☕ Java</span>
+                    <span>🌱 Spring Boot</span>
+                    <span>🐘 PostgreSQL</span>
+                    <span>🔧 Maven</span>
+                    <span>📱 QR Code</span>
+                </div>
+
+                <div class="project-actions">
+
+                    <a href="https://github.com/biancassoares/payment-api"
+                       class="btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-i18n="viewGithub">
+                        Ver no GitHub ↗
+                    </a>
+
+                </div>
+
+            </article>
 
 
-            <h3>
-                Transaction API
-            </h3>
+            <!-- TRANSACTION API -->
+            <article class="project-featured">
 
+                <h3>Transaction API</h3>
 
-            <p class="project-description"
-               data-i18n="transactionDescription">
+                <p class="project-description"
+                   data-i18n="transactionDescription">
+                    API REST desenvolvida para gerenciamento de transações
+                    financeiras, aplicando arquitetura em camadas, validações,
+                    tratamento de exceções, testes unitários e documentação.
+                </p>
 
-                API REST desenvolvida para gerenciamento de transações,
-                aplicando conceitos de arquitetura em camadas, validação,
-                tratamento de exceções, testes e documentação.
+                <div class="project-highlights">
 
-            </p>
-
-
-
-            <div class="project-highlights">
-
-                <div>
-                    ✅
-                    <span data-i18n="projectFeatureCrud">
+                    <div>
+                        ✅
+                        <span data-i18n="projectFeatureCrud">
                         CRUD completo
                     </span>
-                </div>
+                    </div>
 
-
-                <div>
-                    ✅
-                    <span data-i18n="projectFeatureDto">
+                    <div>
+                        ✅
+                        <span data-i18n="projectFeatureDto">
                         DTOs e validação
                     </span>
-                </div>
+                    </div>
 
-
-                <div>
-                    ✅
-                    <span data-i18n="projectFeatureExceptions">
+                    <div>
+                        ✅
+                        <span data-i18n="projectFeatureExceptions">
                         Tratamento de exceções
                     </span>
-                </div>
+                    </div>
 
-
-                <div>
-                    ✅
-                    <span data-i18n="projectFeatureTests">
+                    <div>
+                        ✅
+                        <span data-i18n="projectFeatureTests">
                         Testes unitários
                     </span>
+                    </div>
+
                 </div>
 
-
-                <div>
-                    ✅
-                    <span data-i18n="projectFeatureDocs">
-                        Documentação com Swagger
-                    </span>
+                <div class="project-tags">
+                    <span>☕ Java</span>
+                    <span>🌱 Spring Boot</span>
+                    <span>🐘 PostgreSQL</span>
+                    <span>🧪 JUnit</span>
+                    <span>📖 Swagger</span>
                 </div>
 
-            </div>
+                <div class="project-actions">
+
+                    <a href="https://github.com/biancassoares/transaction-api"
+                       class="btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-i18n="viewGithub">
+                        Ver no GitHub ↗
+                    </a>
+
+                </div>
+
+            </article>
 
 
-
-            <div class="project-tags">
-
-                <span>☕ Java</span>
-                <span>🌱 Spring Boot</span>
-                <span>🐘 PostgreSQL</span>
-                <span>🧪 JUnit</span>
-                <span>📖 Swagger</span>
-
-            </div>
-
-
-
-            <div class="project-actions">
-
-                <a href="https://github.com/biancassoares/transaction-api"
-                   class="btn-primary"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-i18n="viewGithub">
-
-                    Ver no GitHub ↗
-
-                </a>
-
-            </div>
-
-        </article>
+        </div>
+        <!-- GRID TERMINA AQUI -->
 
     </section>
-
-
 
     <!-- CONTATO -->
     <section class="contact-section" id="contato">

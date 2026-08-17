@@ -357,9 +357,10 @@ nav a:hover {
 }
 
 .section-heading > p:last-child {
-    max-width: 700px;
+    width: 100%;
+    max-width: none;
 
-    color: #666666;
+    color: var(--text-secondary);
     font-size: 18px;
     line-height: 1.7;
 }
@@ -394,19 +395,22 @@ nav a:hover {
 .project-status {
     display: inline-flex;
     align-items: center;
+
+    align-self: flex-start;
+
     gap: 6px;
 
-    background-color: #fff0f4;
-    color: #d96c8a;
+    background-color: #f8eee9;
+    color: var(--warm);
 
-    padding: 8px 12px;
+    padding: 7px 11px;
 
     border-radius: 20px;
 
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 
@@ -441,35 +445,42 @@ nav a:hover {
 
 
 .project-highlights div {
-    color: #555555;
+    display: flex;
+    align-items: flex-start;
 
-    font-size: 16px;
+    gap: 6px;
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
 }
+
 .project-tags {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 10px;
+    gap: 8px;
 
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 
 .project-tags span {
-    background-color: #ffffff;
+    background-color: #fafafa;
 
-    border: 1px solid #f0c5d1;
-    border-radius: 10px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
 
-    padding: 9px 13px;
+    padding: 8px 12px;
 
-    color: #555555;
+    color: var(--text-primary);
 
-    font-size: 14px;
+    font-size: 13px;
 }
 .project-actions {
     display: flex;
-    gap: 12px;
+
+    margin-top: auto;
 }
 .contact-section {
     max-width: 1200px;
@@ -742,22 +753,112 @@ nav a:hover {
     border-color: var(--accent);
 }
 
-
 /* PROJETOS */
 
-.section-kicker {
-    color: var(--secondary);
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    align-items: stretch;
 }
 
-.section-heading h2,
-.project-featured h3,
-.contact-content h2 {
+.project-featured {
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    padding: 30px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-featured:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(45, 48, 53, 0.10);
+}
+
+.project-featured h3 {
+    font-size: 28px;
     color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+.project-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+    margin-bottom: 24px;
+}
+
+.project-highlights div {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.project-tags span {
+    font-size: 13px;
+}
+
+.project-actions {
+    display: flex;
+    margin-top: auto;
 }
 
 .project-status {
-    background-color: var(--accent-soft);
-    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+
+    gap: 6px;
+
+    background-color: #f8eee9;
+    color: var(--warm);
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 16px;
+}
+
+.section-kicker {
+    color: var(--warm);
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    max-width: 750px;
+    color: var(--text-secondary);
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 
@@ -935,28 +1036,37 @@ html {
         line-height: 1.6;
     }
 
-    /* PROJETOS */
+  /* PROJETOS - MOBILE */
 
-    .projects-section {
-        padding: 0 24px 60px;
-    }
+  .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+  }
 
-    .project-featured {
-        padding: 24px;
-    }
+  .project-featured {
+      padding: 24px;
+  }
 
-    .project-highlights {
-        grid-template-columns: 1fr;
-    }
+  .project-featured h3 {
+      font-size: 24px;
+  }
 
-    .project-featured h3 {
-        font-size: 24px;
-    }
+  .project-description {
+      font-size: 14px;
+      line-height: 1.6;
+  }
 
-    .project-featured p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
+  .project-highlights {
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+
+  .project-highlights div {
+      font-size: 14px;
+  }
+.project-tags span {
+    font-size: 13px;
+}
 
     /* CONTATO */
 
