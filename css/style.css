@@ -300,7 +300,29 @@ nav a:hover {
 .tech-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 14px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    background-color: var(--background);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    font-weight: 500;
+}
+
+.tech-item img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
 }
 
 .tech-item {
@@ -332,7 +354,7 @@ nav a:hover {
 .projects-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 32px 100px;
+    padding: 0 32px 70px;
 }
 
 
@@ -423,7 +445,7 @@ nav a:hover {
 
 
 .project-description {
-    max-width: 800px;
+    max-width: 1000px;
 
     color: #555555;
 
@@ -431,6 +453,7 @@ nav a:hover {
     line-height: 1.8;
 
     margin-bottom: 28px;
+
 }
 
 .project-highlights {
@@ -442,7 +465,6 @@ nav a:hover {
 
     margin-bottom: 28px;
 }
-
 
 .project-highlights div {
     display: flex;
@@ -485,7 +507,7 @@ nav a:hover {
 .contact-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 32px 80px;
+    padding: 0 32px 70px;
 }
 
 .contact-card {
@@ -855,7 +877,9 @@ nav a:hover {
 }
 
 .section-heading > p:last-child {
-    max-width: 750px;
+    width: 100%;
+    max-width: none;
+
     color: var(--text-secondary);
     font-size: 17px;
     line-height: 1.7;
@@ -1023,9 +1047,15 @@ html {
 
     /* SOBRE MIM */
 
-    .about-tech {
-        padding: 10px 24px 60px;
-    }
+ .about-tech {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px 32px 70px;
+
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 40px;
+ }
 
     .info-card {
         padding: 22px;
